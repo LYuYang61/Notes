@@ -1,5 +1,5 @@
 # 1、共识算法Raft
-- 原文
+- 原文：[Notes/论文原文/1、共识算法Raft.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/1%E3%80%81%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95Raft.pdf)
 ### 1、复制状态机 Replicated state machine
 - **核心思想：相同的初始状态 + 相同的输入 = 相同的结束状态**
 - 多个节点上，从相同的初始状态开始，执行相同的一串命令，产生相同的最终状态

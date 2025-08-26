@@ -1,4 +1,5 @@
 # 3、支持乱序执行的Raft协议
+- 原文：[Notes/论文原文/3、支持乱序执行的Raft协议.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/3%E3%80%81%E6%94%AF%E6%8C%81%E4%B9%B1%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%9A%84Raft%E5%8D%8F%E8%AE%AE.pdf)
 ### 1、ParallelRaft-SE
 #### 1.1 简介
 - **目标**：在保持 Raft 易于理解和实现优点的基础上，允许日志条目乱序提交，从而提高系统吞吐量

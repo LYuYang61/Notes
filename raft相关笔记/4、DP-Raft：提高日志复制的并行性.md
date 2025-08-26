@@ -1,4 +1,5 @@
 # 4、DP-Raft：提高日志复制的并行性
+- 原文：[Notes/论文原文/4、DP-Raft：提高日志复制的并行性.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/4%E3%80%81DP-Raft%EF%BC%9A%E6%8F%90%E9%AB%98%E6%97%A5%E5%BF%97%E5%A4%8D%E5%88%B6%E7%9A%84%E5%B9%B6%E8%A1%8C%E6%80%A7.pdf)
 ### 1、简介
 #### 1.1 Raft 的局限性
 - 要求日志必须**顺序确认、顺序提交、顺序应用**，并且不允许存在日志空洞

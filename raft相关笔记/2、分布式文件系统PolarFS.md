@@ -1,4 +1,5 @@
 # 2、分布式文件系统PolarFS
+- 原文：[Notes/论文原文/2、分布式文件系统PolarFS.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/2%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9FPolarFS.pdf)
 ### 1、摘要
 - PolarFS 是一个具有超低延迟和高可用性的分布式文件系统，专为 POLARDB 数据库服务而设计，目前已在阿里云上提供
 - PolarFS 在用户空间中利用了轻量级网络堆栈和 I/O 堆栈，充分利用了 RDMA、NVMe 和 SPDK 等新兴技术
