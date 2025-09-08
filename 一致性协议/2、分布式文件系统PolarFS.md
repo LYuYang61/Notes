@@ -71,7 +71,7 @@
 ### 4、I/O 执行模型
 - 当 POLARDB 访问数据时，它通过 PFS 接口将文件 I/O 请求委托给 libpfs，通常通过 `pfs.pread` 或 `pfs.pwrite`
 - 对于写请求，由于设备块通过 `pfs_fallocate` 预分配给文件，几乎不需要修改文件系统元数据，从而避免了读写节点之间昂贵的元数据同步
-- **请求处理流程**
+- **请求处理流程**：
 	1. Libpfs 将文件偏移量映射到块偏移量，并将文件 I/O 请求分解为一个或多个固定大小的块 I/O 请求
 	2. 这些块 I/O 请求通过 libpfs 和 PolarSwitch 之间的共享内存（由多个环形缓冲区构成）发送到 PolarSwitch
 	3. PolarSwitch 不断轮询所有环形缓冲区，发现新请求后，将其从环形缓冲区中取出并转发给相应的 ChunkServer

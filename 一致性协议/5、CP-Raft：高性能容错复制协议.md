@@ -1,4 +1,5 @@
 # 5、CP-Raft：高性能容错复制协议
+- 原文：[Notes/论文原文/5、CP-Raft：高性能容错复制协议.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/5%E3%80%81CP-Raft%EF%BC%9A%E9%AB%98%E6%80%A7%E8%83%BD%E5%AE%B9%E9%94%99%E5%A4%8D%E5%88%B6%E5%8D%8F%E8%AE%AE.pdf)
 ### 1、简介
 - 现有 OORaft 面临的难题：
 	- 依赖分析开销大

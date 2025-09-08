@@ -58,7 +58,7 @@
 	- **Leader 的任期号**：检测日志副本一致性，判断节点状态
 	- **日志索引**：标识位置，区分日志前后关系
 ![image.png](https://qingwu-oss.oss-cn-heyuan.aliyuncs.com/lian/img/20250708215950.png)
-- 在日志复制过程中，leader 或 follower 随时都有崩溃或缓慢的可能性，Raft 必须要在有岩机的情况下继续支持日志复制，并且保证每个副本日志顺序的一致（以保证复制状态机的实现），具体有三种可能：
+- 在日志复制过程中，leader 或 follower 随时都有崩溃或缓慢的可能性，Raft 必须要在有宕机的情况下继续支持日志复制，并且保证每个副本日志顺序的一致（以保证复制状态机的实现），具体有三种可能：
 	- **Follower 缓慢**：如果有 follower 因为某些原因没有给 leader 响应，那么 leader 会**不断地重发**追加条目请求 RPC，哪怕 leader 已经回复了客户端（超过半数 follower 复制），直至 follower 追上日志
 	- **Follower 宕机**：如果有 follower 宕机后恢复，这时 Raft 追加条目的**一致性检查**生效，保证 follower 能按顺序恢复崩溃后的缺失的日志
 		- **Raft 的一致性检查**：leader 在每一个发往 follower 的追加条目 RPC 中，会放入**前一个日志条目的索引位置和任期号**，如果 follower 在它的日志中找不到，那么它就会拒绝此日志，leader 收到 follower 的拒绝后，会再发送前一个日志条目，从而**逐渐向前定位到 follower 第一个缺失的日志**

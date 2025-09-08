@@ -1,5 +1,5 @@
 # 6、LCR：私有链毫秒级共识的领导者确认复制
-
+- 原文：[Notes/论文原文/6、LCR：私有链毫秒级共识的领导者确认复制.pdf at master · LYuYang61/Notes · GitHub](https://github.com/LYuYang61/Notes/blob/master/%E8%AE%BA%E6%96%87%E5%8E%9F%E6%96%87/6%E3%80%81LCR%EF%BC%9A%E7%A7%81%E6%9C%89%E9%93%BE%E6%AF%AB%E7%A7%92%E7%BA%A7%E5%85%B1%E8%AF%86%E7%9A%84%E9%A2%86%E5%AF%BC%E8%80%85%E7%A1%AE%E8%AE%A4%E5%A4%8D%E5%88%B6.pdf)
 ### 1、简介
 - 私有链通过强化身份验证机制来管理网络参与者
 - 许多私有链系统普遍采用基于领导者的崩溃容错（CFT）共识协议【例如 Raft 和 Paxos】来实现状态机复制（SMR），这种设计在信任环境中能够有效提升数据一致性效率
